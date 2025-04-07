@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FreshGuard</title>
+    <link rel="icon" href="./dist/images/freshGuardLogo.ico" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Oxygen:700" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap JS and Popper.js (required for the accordion) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body class="is-boxed has-animations overflow-x-hidden" >
+    <div class="boxed-container">
+        <header class="site-header">
+            <div class="container">
+                <div class="site-header-inner d-flex justify-content-between align-items-center py-3">
+                    <div class="brand header-brand">
+                        <h1 class="m-0">
+                            <a href="#">
+                                <img class="header-logo-image" src="dist/images/FGlogo.png" alt="Logo">
+                            </a>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- Hero Section -->
+            <section class="hero text-center text-light position-relative py-5">
+                <div class="hero-bg position-absolute top-0 start-0 w-100 h-100 z-index-0"></div>
+                <div class="hero-particles-container position-relative z-index-1">
+                    <canvas id="hero-particles"></canvas>
+                </div>
+                <div class="hero-svg-wrapper">
+                    <img src="dist/images/hero-bg-top.svg" class="hero-svg hero-svg-1">
+                    <img src="dist/images/hero-bg-bottom.svg" class="hero-svg hero-svg-2">
+                    <!-- <img src="dist/images/hero-svg-3.svg" class="hero-svg hero-svg-3">
+                    <img src="dist/images/hero-svg-4.svg" class="hero-svg hero-svg-4"> -->
+                </div>
+                <div class="container">
+                    <div class="hero-inner">
+                        <div class="hero-copy mb-4">
+                            <h1 class="hero-title mt-0">FreshGuard</h1>
+                            <p class="hero-paragraph">Breakthroughs in technology are changing how we live. FreshGuard brings AI-driven solutions to everyday food management, saving you money while keeping things organized.</p>
+                            <div class="hero-cta">
+                                <a class="btn btn-primary btn-lg" href="#faq-support">FAQ and Support</a>
+                            </div>
+                        </div>
+                        <div class="mockup-container">
+                            <div class="mockup-bg">
+                                <img src="dist/images/iphone-hero-bg.svg" alt="iPhone illustration" class="img-fluid">
+                            </div>
+                            <img class="device-mockup" src="dist/images/iphone-hero-landing.png" alt="iPhone Hero" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features Section -->
+
+
+            <section class="features-extended section">
+                <div class="features-extended-inner section-inner">
+					<div class="features-extended-wrap">
+						<div class="containerFeatures">
+							<div class="feature-extended">
+								<div class="feature-extended-image">
+									<div class="mockup-body-bg">
+										<img src="dist/images/iphone-feature-bg-01.svg" alt="iPhone Feature 01 illustration">
+									</div>
+									<img class="device-body-mockup is-revealing" src="dist/images/iphone-hero-small.png" alt="iPhone Feature 01">
+								</div>
+								<div class="feature-extended-body is-revealing">
+									<h3 class="mt-0 mb-16">Shared, Digital Pantry.</h3>
+									<p class="m-0">Keep track of all your groceries, from perishable items to household essentials, in one digital space. Real-time updates ensure that everyone in your household stays on the same page, reducing food waste and improving inventory management.</p>
+								</div>
+							</div>
+							<div class="feature-extended">
+								<div class="feature-extended-image">
+									<div class="mockup-body-bg">
+										<img src="dist/images/iphone-feature-bg-02.svg" alt="iPhone Feature 02 illustration">
+									</div>
+									<img class="device-body-mockup is-revealing" src="dist/images/iphone-household-details.png" alt="iPhone Feature 02">
+								</div>
+								<div class="feature-extended-body is-revealing">
+									<h3 class="mt-0 mb-16">Multi-Households.</h3>
+									<p class="m-0">Whether you're sharing groceries with family members or friends, our app allows seamless integration of pantries, making shared shopping and meal planning a breeze.</p>
+								</div>
+							</div>
+							<div class="feature-extended">
+								<div class="feature-extended-image">
+									<div class="mockup-body-bg">
+										<img src="dist/images/iphone-feature-bg-03.svg" alt="iPhone Feature 03 illustration">
+									</div>
+									<img class="device-body-mockup is-revealing" src="dist/images/iphone-add-screen.png" alt="iPhone Feature 03">
+								</div>
+								<div class="feature-extended-body is-revealing">
+									<h3 class="mt-0 mb-16">Product Add.</h3>
+									<p class="m-0">Scan barcodes/products or manually enter items, ensuring that your inventory is always up-to-date.</p>
+								</div>
+							</div>
+							<div class="feature-extended">
+								<div class="feature-extended-image">
+									<div class="mockup-body-bg">
+										<img src="dist/images/iphone-feature-bg-04.svg" alt="iPhone Feature 04 illustration">
+									</div>
+									<img class="device-body-mockup is-revealing" src="dist/images/iphone-scan-receipt.png" alt="iPhone Feature 04">
+								</div>
+								<div class="feature-extended-body is-revealing">
+									<h3 class="mt-0 mb-16">Receipt Scanning.</h3>
+									<p class="m-0">Our intelligent receipt scanning technology extracts product names, quantities, and expiration dates, generating smart insights.</p>
+								</div>
+							</div>
+                            <div class="feature-extended">
+								<div class="feature-extended-image">
+									<div class="mockup-body-bg">
+										<img src="dist/images/iphone-feature-bg-04.svg" alt="iPhone Feature 04 illustration">
+									</div>
+									<img class="device-body-mockup is-revealing" src="dist/images/iphone-alerts.png" alt="iPhone Feature 04">
+								</div>
+								<div class="feature-extended-body is-revealing">
+									<h3 class="mt-0 mb-16">Smart Reminders & Insights.</h3>
+									<p class="m-0">Get notifications for expiring items. Our data-driven approach helps you make informed decisions.</p>
+								</div>
+							</div>
+                            <div class="feature-extended">
+								<div class="feature-extended-image">
+									<div class="mockup-body-bg">
+										<img src="dist/images/iphone-feature-bg-04.svg" alt="iPhone Feature 04 illustration">
+									</div>
+									<img class="device-body-mockup is-revealing" src="dist/images/iphone-receipts.png" alt="iPhone Feature 04">
+								</div>
+								<div class="feature-extended-body is-revealing">
+									<h3 class="mt-0 mb-16">Export Data.</h3>
+									<p class="m-0">Whether you need it for budgeting, meal planning, or just for better organization, export our receipt data with our export feature .</p>
+								</div>
+							</div>
+						</div>
+					</div>
+                </div>
+            </section>
+
+
+            <!-- More Features -->
+            
+            <section class="features-extended">
+                <div class="container">
+					<div class="features-inner section-inner has-bottom-divider">
+						<h2 class="section-features-title mt-0">User Assistance & Help Features</h2>
+                        <div class="features-wrap">
+                            <div class="feature is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+										    <defs>
+										        <linearGradient x1="0%" y1="100%" x2="50%" y2="0%" id="feature-1-a">
+										            <stop stop-color="#F9425F" stop-opacity=".8" offset="0%"/>
+										            <stop stop-color="#47A1F9" stop-opacity=".16" offset="100%"/>
+										        </linearGradient>
+										        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="feature-1-b">
+										            <stop stop-color="#FDFFDA" offset="0%"/>
+										            <stop stop-color="#F97059" stop-opacity=".798" offset="49.935%"/>
+										            <stop stop-color="#F9425F" stop-opacity="0" offset="100%"/>
+										        </linearGradient>
+										    </defs>
+										    <g fill="none" fill-rule="evenodd">
+										        <path d="M24 48H0V24C0 10.745 10.745 0 24 0h24v24c0 13.255-10.745 24-24 24" fill="url(#feature-1-a)"/>
+										        <path d="M40 64H16V40c0-13.255 10.745-24 24-24h24v24c0 13.255-10.745 24-24 24" fill="url(#feature-1-b)"/>
+										    </g>
+										</svg>
+                                    </div>
+                                    <h3 class="feature-title mt-24">Send Feedback</h3>
+                                    <p class="text-sm mb-0">Got questions or feedback? Use our "Send Feedback" page on the APP to reach out, share your thoughts, and ask for help.</p>
+                                </div>
+                            </div>
+							<div class="feature is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<svg width="68" height="64" xmlns="http://www.w3.org/2000/svg">
+										    <defs>
+										        <linearGradient x1="0%" y1="100%" x2="50%" y2="0%" id="feature-2-a">
+										            <stop stop-color="#F9425F" stop-opacity=".8" offset="0%"/>
+										            <stop stop-color="#47A1F9" stop-opacity=".16" offset="100%"/>
+										        </linearGradient>
+										        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="feature-2-b">
+										            <stop stop-color="#FDFFDA" offset="0%"/>
+										            <stop stop-color="#F97059" stop-opacity=".798" offset="49.935%"/>
+										            <stop stop-color="#F9425F" stop-opacity="0" offset="100%"/>
+										        </linearGradient>
+										    </defs>
+										    <g fill="none" fill-rule="evenodd">
+										        <path d="M9.941 63.941v-24c0-13.255 10.745-24 24-24h24v24c0 13.255-10.745 24-24 24h-24z" fill="url(#feature-2-a)" transform="rotate(45 33.941 39.941)"/>
+										        <path d="M16 0v24c0 13.255 10.745 24 24 24h24V24C64 10.745 53.255 0 40 0H16z" fill="url(#feature-2-b)"/>
+										    </g>
+										</svg>
+                                    </div>
+                                    <h3 class="feature-title mt-24">Privacy Policy</h3>
+                                    <p class="text-sm mb-0">Your privacy matters to us. Access our Privacy Policy directly from the app to understand how we handle your data.</p>
+                                </div>
+                            </div>
+                            <div class="feature is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+										    <defs>
+										        <linearGradient x1="50%" y1="100%" x2="50%" y2="43.901%" id="feature-3-a">
+										            <stop stop-color="#F97059" stop-opacity=".798" offset="0%"/>
+										            <stop stop-color="#F9425F" stop-opacity="0" offset="100%"/>
+										        </linearGradient>
+										        <linearGradient x1="58.893%" y1="100%" x2="58.893%" y2="18.531%" id="feature-3-b">
+										            <stop stop-color="#F9425F" stop-opacity=".8" offset="0%"/>
+										            <stop stop-color="#47A1F9" stop-opacity="0" offset="100%"/>
+										        </linearGradient>
+										        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="feature-3-c">
+										            <stop stop-color="#FDFFDA" offset="0%"/>
+										            <stop stop-color="#F97059" stop-opacity=".798" offset="49.935%"/>
+										            <stop stop-color="#F9425F" stop-opacity="0" offset="100%"/>
+										        </linearGradient>
+										    </defs>
+										    <g fill="none" fill-rule="evenodd">
+										        <path fill="url(#feature-3-a)" opacity=".32" d="M0 24h64v40H0z"/>
+										        <path fill="url(#feature-3-b)" d="M40 24H24L0 64h64z"/>
+										        <path d="M10 10v22c0 12.15 9.85 22 22 22h22V32c0-12.15-9.85-22-22-22H10z" fill="url(#feature-3-c)" transform="rotate(45 32 32)"/>
+										    </g>
+										</svg>
+                                    </div>
+                                    <h3 class="feature-title mt-24">Search Through Pantry</h3>
+                                    <p class="text-sm mb-0">Easily search through your pantry to find the ingredients you need and keep track of what you have.</p>
+                                </div>
+                            </div>
+                            <div class="feature is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+										    <defs>
+										        <linearGradient x1="0%" y1="100%" x2="50%" y2="0%" id="feature-4-a">
+										            <stop stop-color="#F9425F" stop-opacity=".8" offset="0%"/>
+										            <stop stop-color="#47A1F9" stop-opacity=".16" offset="100%"/>
+										        </linearGradient>
+										        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="feature-4-b">
+										            <stop stop-color="#FDFFDA" offset="0%"/>
+										            <stop stop-color="#F97059" stop-opacity=".798" offset="49.935%"/>
+										            <stop stop-color="#F9425F" stop-opacity="0" offset="100%"/>
+										        </linearGradient>
+										    </defs>
+										    <g fill="none" fill-rule="evenodd">
+										        <path d="M24 64H0V40c0-13.255 10.745-24 24-24h24v24c0 13.255-10.745 24-24 24" fill="url(#feature-4-a)" transform="matrix(-1 0 0 1 48 0)"/>
+										        <path d="M40 48H16V24C16 10.745 26.745 0 40 0h24v24c0 13.255-10.745 24-24 24" fill="url(#feature-4-b)"/>
+										    </g>
+										</svg>
+                                    </div>
+                                    <h3 class="feature-title mt-24">Edit Pantry Items</h3>
+                                    <p class="text-sm mb-0">Update your pantry inventory with ease—add, remove, or modify pantry items in just a few steps.</p>
+                                </div>
+                            </div>
+							<div class="feature is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+										    <defs>
+										        <linearGradient x1="0%" y1="100%" x2="50%" y2="0%" id="feature-5-a">
+										            <stop stop-color="#F9425F" stop-opacity=".8" offset="0%"/>
+										            <stop stop-color="#47A1F9" stop-opacity=".16" offset="100%"/>
+										        </linearGradient>
+										        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="feature-5-b">
+										            <stop stop-color="#FDFFDA" offset="0%"/>
+										            <stop stop-color="#F97059" stop-opacity=".798" offset="49.935%"/>
+										            <stop stop-color="#F9425F" stop-opacity="0" offset="100%"/>
+										        </linearGradient>
+										    </defs>
+										    <g fill="none" fill-rule="evenodd">
+										        <path d="M24 63H0V39c0-13.255 10.745-24 24-24h24v24c0 13.255-10.745 24-24 24" fill="url(#feature-5-a)" transform="matrix(-1 0 0 1 48 0)"/>
+										        <path d="M40 48H16V24C16 10.745 26.745 0 40 0h24v24c0 13.255-10.745 24-24 24" fill-opacity=".24" fill="url(#feature-5-a)" transform="matrix(-1 0 0 1 80 0)"/>
+										        <path d="M10.113 10.113v22c0 12.15 9.85 22 22 22h22v-22c0-12.15-9.85-22-22-22h-22z" fill="url(#feature-5-b)" transform="rotate(45 32.113 32.113)"/>
+										    </g>
+										</svg>
+                                    </div>
+                                    <h3 class="feature-title mt-24">Onboarding Guide</h3>
+                                    <p class="text-sm mb-0">New to the app? Our onboarding guide will walk you through all the essential features to get started quickly.</p>
+                                </div>
+                            </div>
+                            <div class="feature is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+										    <defs>
+										        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="feature-6-a">
+										            <stop stop-color="#FDFFDA" offset="0%"/>
+										            <stop stop-color="#F97059" stop-opacity=".798" offset="49.935%"/>
+										            <stop stop-color="#F9425F" stop-opacity="0" offset="100%"/>
+										        </linearGradient>
+										        <linearGradient x1="58.893%" y1="100%" x2="58.893%" y2="18.531%" id="feature-6-b">
+										            <stop stop-color="#F9425F" stop-opacity=".8" offset="0%"/>
+										            <stop stop-color="#47A1F9" stop-opacity="0" offset="100%"/>
+										        </linearGradient>
+										    </defs>
+										    <g fill="none" fill-rule="evenodd">
+										        <path d="M24 48H0V24C0 10.745 10.745 0 24 0h24v24c0 13.255-10.745 24-24 24" fill="url(#feature-6-a)"/>
+										        <path fill-opacity=".64" fill="url(#feature-6-b)" d="M24 29.229h40V64H0z"/>
+										    </g>
+										</svg>
+                                    </div>
+                                    <h3 class="feature-title mt-24">Help Center</h3>
+                                    <p class="text-sm mb-0">Need assistance? Visit our Help Center where you'll find FAQs, troubleshooting tips, and more resources.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- QR CODE -->
+            <section class="qr-feature">
+                <div class="qr-features-inner">
+                    <h2 class="qr-code-title mt-0">Get the App!</h2>
+                </div>
+                <div class="qr-code">
+                    <img src="dist/images/qrCode.png">
+                </div>
+            </section>
+
+
+            <!-- media  -->
+            <section class="media-section">
+                <div class="container-sm">
+                    <div class="media-inner section-inner">
+                        <div class="media-header text-center">
+                            <h2 class="section-title mt-0">Introducing FreshGuard</h2>
+                            <p class="section-paragraph mb-0">Checkout this video to demonstrate what the app can do!</p>
+                        </div>
+						<div class="media-canvas">
+                            <div class="video-container">
+                            <iframe width="800" height="450" 
+                                src="https://www.youtube.com/embed/sWEQ4mznGWg" 
+                                frameborder="0" allowfullscreen>
+                            </iframe>
+                            </div>  
+						</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ & Support Section -->
+            <section id="faq-support" class="faq-support py-5">
+                <div class="container">
+                    <div class="Faq-title">
+                        <h3>FAQ & Support</h3>
+                        <p>Here are some of the frequently asked questions and common issues users encounter. Find solutions below:</p>
+                    </div>
+
+                    <!-- FAQ Accordion -->
+                    <div class="accordion" id="faqAccordion">
+                        <!-- FAQ 1 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    How do I track my food's expiration dates?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Press the <code>Add Item</code> button on the tab bar. Scan the barcode and expiration date of the product, and the system will automatically create the pantry item. Alternatively, you can manually enter the details.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 2 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    What should I do if I can’t scan a product barcode?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    You can skip the barcode scan page and move on to the next step.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 3 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Can I add an expiration date after I've already added a product?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    An expiration date is required to add an item to the pantry. However, you can edit the expiration date later by pressing the pantry card on the Home, Search, or Pantry Dashboard page.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 4 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    How do I get support if I encounter an issue?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    You can send feedback through the app by selecting <code>Send Feedback</code>. We also perform regular checks to ensure everything is running smoothly.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 5 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Is there a way to add custom products that aren't in the database?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, you can manually enter products. You can bypass the barcode and expiration date screen. While the goal is to automate this process, we give users the freedom of choice!
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 6 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    Can I receive reminders for product expiration dates?
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, you will receive reminders as push notifications and also see them displayed in the 'Alerts' tab. You can receive notifications 1 week and 3 days before the best-before date. These settings can be controlled in the <code>Settings</code> tab.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 7 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSeven">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    How do I delete a product from my inventory?
+                                </button>
+                            </h2>
+                            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Tap on a pantry card to open the edit screen, and then select <code>Discard</code> to delete the item.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 8 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingEight">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                    Can I track food expiration dates for items that don't have barcodes?
+                                </button>
+                            </h2>
+                            <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, you can bypass the barcode scan screen and manually enter the product details.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 9 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingNine">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                    Is my personal data secure on the app?
+                                </button>
+                            </h2>
+                            <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, we use encryption to protect your data. We only collect necessary information and ask for permission before accessing any data. All data is encrypted both during transmission and when stored in our database.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 10 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTen">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                    Can I sync my inventory across multiple devices?
+                                </button>
+                            </h2>
+                            <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes! Your inventory can be synced across devices.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 11 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingEleven">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                                    Can I export my food inventory to a file?
+                                </button>
+                            </h2>
+                            <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, you can export your food inventory from the receipt page. The receipt can be exported in CSV format and opened in any editor.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 12 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwelve">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                                    What should I do if my app crashes or freezes?
+                                </button>
+                            </h2>
+                            <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Close and reopen the app. If you're using iPhone, you can shake the phone or perform a three-finger touch to open the refresh menu and press Refresh. If it fails, delete and reinstall the app, then scan the QR code again.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 13 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThirteen">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+                                    How do I edit or update product details after entering them?
+                                </button>
+                            </h2>
+                            <div id="collapseThirteen" class="accordion-collapse collapse" aria-labelledby="headingThirteen" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Tap on a pantry card to access the edit screen and update the product details.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 14 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFourteen">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+                                    Does FreshGuard integrate with any other apps or devices?
+                                </button>
+                            </h2>
+                            <div id="collapseFourteen" class="accordion-collapse collapse" aria-labelledby="headingFourteen" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    While the export feature works with other apps (e.g., CSV files), device integrations like syncing with calendars and other features are coming soon.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 15 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFifteen">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">
+                                    How do I manage multiple users in the app (if applicable, like family sharing)?
+                                </button>
+                            </h2>
+                            <div id="collapseFifteen" class="accordion-collapse collapse" aria-labelledby="headingFifteen" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    As the admin, you can add, delete, or transfer ownership to members. On the Home page, you can select a household to switch your pantry view to that household's inventory.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 16 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSixteen">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen">
+                                    Can you remove notifications?
+                                </button>
+                            </h2>
+                            <div id="collapseSixteen" class="accordion-collapse collapse" aria-labelledby="headingSixteen" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, swipe right on in-app alerts to dismiss individual notifications or press Clear All to remove them all.
+                                </div>
+                            </div>
+                        </div>  
+
+                        <!-- FAQ 17 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSeventeen">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeventeen" aria-expanded="false" aria-controls="collapseSeventeen">
+                                    How long does receipt scan take?
+                                </button>
+                            </h2>
+                            <div id="collapseSeventeen" class="accordion-collapse collapse" aria-labelledby="headingSeventeen" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Longer receipts may take 5+ minutes. You can check the status of the receipt scan on the receipt scan page. We're working to improve scan speed.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+			<div class="footer-particles-container">
+				<canvas id="footer-particles"></canvas>
+			</div>
+			<div class="site-footer-top">
+				<section class="cta section text-light">
+					<div class="container-sm">
+						<div class="cta-inner section-inner">
+							<div class="cta-header text-center">
+								<h2 class="section-title mt-0">Stay in the know</h2>
+								<p class="section-paragraph">Food waste isn’t just an inconvenience—it’s an urgent problem. That’s where FreshGuard comes in. Join our app today to track your groceries, get reminders, and help reduce food waste.</p>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="site-footer-bottom">
+				<div class="container">
+					<div class="site-footer-inner">
+						<div class="brand footer-brand">
+							<a href="#">
+								<img src="dist/images/logo.svg" alt="FreshGuard logo">
+							</a>
+						</div>
+						<ul class="footer-links list-reset">
+							<li>
+								<a href="#">Contact through the</a>
+							</li>
+							<li>
+								<a href="#">About us</a>
+							</li>
+							<li>
+								<a href="#faq-support">FAQ's</a>
+							</li>
+							<li>
+								<a href="#faq-support">Support</a>
+							</li>
+						</ul>
+						<ul class="footer-social-links list-reset">
+							<li>
+								<a href="https://github.com/Fresh-Guard/FreshGuard-App">
+									<span class="screen-reader-text">Github</span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.372 0 0 5.372 0 12c0 5.303 3.438 9.8 8.207 11.385.6.113.82-.26.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.333-1.755-1.333-1.755-1.09-.744.083-.728.083-.728 1.205.085 1.84 1.238 1.84 1.238 1.07 1.835 2.805 1.304 3.49.997.108-.775.418-1.305.762-1.605-2.665-.304-5.466-1.333-5.466-5.93 0-1.31.47-2.38 1.236-3.22-.124-.303-.536-1.526.116-3.18 0 0 1.008-.323 3.3 1.23a11.53 11.53 0 013.006-.404c1.02.005 2.045.138 3.006.404 2.29-1.553 3.296-1.23 3.296-1.23.654 1.654.242 2.877.118 3.18.77.84 1.235 1.91 1.235 3.22 0 4.61-2.805 5.624-5.475 5.92.43.372.823 1.103.823 2.223 0 1.606-.014 2.898-.014 3.29 0 .319.216.693.825.576C20.565 21.797 24 17.3 24 12c0-6.628-5.372-12-12-12z" fill="white"/>
+                                    </svg>
+								</a>
+							</li>
+						</ul>
+						<div class="footer-copyright">&copy; 2025 FreshGuard, all rights reserved</div>
+					</div>
+				</div>
+			</div>
+        </footer>
+
+    </div>
+    <!-- Include Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="dist/js/main.min.js"></script>
+</body>
+</html>

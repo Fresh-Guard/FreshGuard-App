@@ -1,0 +1,799 @@
+/* Basic reset */
+html {
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+body {
+    font-family: 'Heebo', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.is-boxed {
+	background: #0D1423
+}
+
+.boxed-container {
+	max-width: 1440px;
+	margin: 0 auto;
+	box-shadow: 0 20px 48px rgba(22, 30, 42, 0.16)
+}
+
+/* Header */
+.site-header {
+    padding: 24px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.container {
+	max-width: 1128px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.site-header-inner {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo-image {
+	width: 20%;
+	height: 20%;
+}
+
+/* main */
+main {
+	flex: 1 0 auto
+}
+
+/* Hero section */
+.hero {
+    position: relative;
+    padding-top: 128px;
+    padding-bottom: 40px; /* Decrease this value */
+    z-index: 0;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    /* bottom: 42%; */
+    left: 0;
+    right: 0;
+    background: #0B0D19;
+    z-index: -2;
+}
+
+.hero-inner {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-copy {
+    position: relative;
+    margin-bottom: 48px;
+}
+
+
+.hero-title {
+    /* font-family: "Playfair Display", serif; */
+	font-family:"Heebo", sans-serif; 
+	/* font-family: "Monaco", "Consolas", "Andale Mono", "DejaVu Sans Mono", monospace;  */
+    font-size: 5em; /* Adjust the size to make it larger or smaller */
+    font-weight: 700; /* Make the font bold */
+    line-height: 1.1; /* Optional: adjusts line height for readability */
+}
+
+.hero-paragraph {
+    display: inline-block; /* Ensures that the span behaves like a block element */
+    width: 80%; /* Set a specific width (adjust as needed) */
+    font-size: 1.5rem; /* Make the text bigger (adjust size as needed) */
+    color: #808080; /* Grey text color */
+    margin-bottom: 32px; /* Keep the existing margin at the bottom if needed */
+}
+
+.hero-svg-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.hero-svg {
+    position: absolute;
+    /* width: 80px; */
+    height: auto;
+    opacity: 0.6;
+    animation: float 5s infinite ease-in-out;
+}
+
+/* Position each SVG uniquely */
+.hero-svg-1 {
+    /* top: 10%; */
+    right: 0;
+    animation-delay: 0s;
+}
+
+.hero-svg-2 {
+    bottom: 0%;
+    right: 10%;
+    animation-delay: 1s;
+}
+
+.hero-svg-3 {
+    bottom: 20%;
+    left: 15%;
+    animation-delay: 2s;
+}
+
+.hero-svg-4 {
+    bottom: 5%;
+    right: 25%;
+    animation-delay: 3s;
+}
+
+/* Floating Animation */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+
+.mockup-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; /* Adjust as needed */
+}
+
+.mockup-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background: url("../images/iphone-hero-bg.svg") no-repeat center; */
+    /* background-size: contain; */
+    z-index: -1; /* Behind the phone */
+}
+
+
+.device-mockup {
+	margin-top: 40%;
+    position: relative;
+    z-index: 1;
+    max-width: 400px; /* Adjust for responsiveness */
+}
+
+/* main body */
+.features-extended {
+    background-color: #06101F;
+    padding: 100px 0;
+}
+
+.features-extended-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.containerFeatures {
+	margin-top: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.feature-extended {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Alternate Layouts */
+.feature-extended:nth-child(odd) {
+    flex-direction: row;;
+}
+
+.feature-extended:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+/* Image Section */
+.feature-extended-image {
+    position: relative;
+    width: 50%;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Mockup Background - Always Centered */
+.mockup-body-bg {
+    position: absolute;
+    /* width: 100%; */
+    /* max-width: 300px; */
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+}
+
+/* .mockup-body-bg img {
+    width: 100%;
+    opacity: 0.5;
+} */
+
+/* Device Image */
+.device-body-mockup {
+    width: 90%;
+    max-width: 250px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Text Section */
+.feature-extended-body {
+    width: 45%;
+    max-width: 500px;
+    text-align: left;
+}
+
+/* Alternate Text Alignment */
+.feature-extended:nth-child(odd) .feature-extended-body {
+    text-align: right;
+}
+
+.feature-extended:nth-child(even) .feature-extended-body {
+    text-align: left;
+}
+
+/* Scroll Animation */
+.reveal {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Feature Title Styling */
+.feature-extended-body h3 {
+    font-family: "Heebo", sans-serif;
+    font-size: 3.5em; /* Slightly smaller than hero-title */
+    font-weight: 700;
+    line-height: 1.2;
+    /* color: #333;  */
+	color: white; 
+    margin-bottom: 16px;
+}
+
+/* Feature Paragraph Styling */
+.feature-extended-body p {
+    font-family: "Heebo", sans-serif;
+    font-size: 1.5rem;
+    color: #808080;
+    width: 80%; /* Match hero-paragraph */
+    margin-bottom: 32px;
+}
+
+
+/* More Feautres */
+
+.section-features-title
+{
+	font-family: "Heebo", sans-serif;
+    font-size: 3.5em; /* Slightly smaller than hero-title */
+    font-weight: 700;
+    line-height: 1.2;
+    /* color: #333;  */
+	color: white; 
+    margin-bottom: 16px;
+}
+
+.feature-icon svg {
+    width: 60px;
+    height: 60px;
+    fill: #f9425f;
+}
+
+.features-wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 30px; /* Adjust the space between the columns */
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature-inner {
+    text-align: center;
+}
+
+.features-extended {
+    background-color: #06101F;
+    padding: 100px 0;
+}
+
+/* Title styling to match other sections */
+.feature-title {
+    font-size: 1.8rem;  /* Make title size consistent */
+    color: #FFFFFF;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+/* Paragraph styling to match other sections */
+.text-sm {
+    font-size: 1rem;
+    color: #B3B9C4;
+    line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .features-wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* QR CODE */
+.qr-feature {
+    position: relative;
+    background-color: #06101F;
+    padding: 100px 0;
+    overflow: hidden; /* hide gradient overflow */
+}
+
+/* Top faded border */
+.qr-feature::before,
+.qr-feature::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px; /* thin line */
+    background: linear-gradient(to right, transparent, lightgrey, transparent);
+    pointer-events: none; /* allow clicks to go through */
+}
+
+.qr-feature::before {
+    top: 0;
+}
+
+.qr-feature::after {
+    bottom: 0;
+}
+
+.qr-code-title
+{
+	font-family: "Heebo", sans-serif;
+    font-size: 3.5em; /* Slightly smaller than hero-title */
+    font-weight: 700;
+    line-height: 1.2;
+    /* color: #333;  */
+	color: white; 
+}
+.qr-features-inner {
+    display: flex;
+    justify-content: center;  /* Centers horizontally */
+    align-items: center;      /* Centers vertically */
+    text-align: center;       /* Ensures text inside is centered */
+}
+.qr-code {
+    display: flex;
+    justify-content: center;  /* Centers horizontally */
+    align-items: center;      /* Centers vertically */
+    text-align: center;     
+}
+
+.qr-code img {
+    width: 20%;
+    height: 20%;
+}
+
+/* Media Section */
+.media-section {
+    background-color: #06101F;
+    padding: 100px 0;
+}
+
+.media-header h2 {
+    color: white; /* Ensures the h3 title is white */
+    margin-bottom: 10px; /* Optional: Adds space below the title */
+}
+
+.media-header p {
+    color: white; /* Ensures the paragraph text is white */
+    font-size: 1.1rem; /* Optional: Adjusts the font size of the paragraph */
+    margin-top: 0; /* Optional: Removes space above the paragraph */
+}
+
+
+.media-canvas{
+    display: flex;
+    justify-content: center;  /* Centers horizontally */
+    align-items: center;      /* Centers vertically */
+    text-align: center;       /* Ensures text inside is centered */
+}
+
+.media-canvas iframe {
+    max-width: 100%; /* Ensures responsiveness */
+    border-radius: 8px; /* Optional: Rounds corners */
+}
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Prevents it from being too wide */
+    aspect-ratio: 16 / 9; /* Maintains the correct video ratio */
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+@media (min-width: 641px){
+	.media .section-inner{
+		padding-bottom:144px
+}
+	.media .section-paragraph{
+		padding-left:72px;
+		padding-right:72px;
+		margin-bottom:80px
+}
+	.media-canvas::before{
+		width:530px;
+		height:380px;
+		bottom:-128px;
+		left:calc(50% - 275px);
+		background-size:530px 380px
+}
+	.media-control{
+		top:calc(50% - 48px);
+		left:calc(50% - 48px)
+}
+	.media-control svg{
+		width:96px;
+		height:96px
+}
+}
+/* FAQ Section */
+.Faq-title {
+    width: 45%;
+    max-width: 500px;
+    text-align: center;
+    margin: 0 auto; /* Centers the container horizontally */
+    color: white; /* Makes the text white */
+}
+
+.Faq-title h3 {
+    color: white; /* Ensures the h3 title is white */
+    margin-bottom: 10px; /* Optional: Adds space below the title */
+}
+
+.Faq-title p {
+    color: white; /* Ensures the paragraph text is white */
+    font-size: 1.1rem; /* Optional: Adjusts the font size of the paragraph */
+    margin-top: 0; /* Optional: Removes space above the paragraph */
+}
+#faqAccordion {
+    max-height: none; /* Prevents a max height from restricting the accordion */
+    overflow: visible; /* Ensures content expands without clipping */
+}
+
+.accordion-button {
+    z-index: 2; /* Ensures it's clickable */
+    position: relative; /* Needed for z-index to work */
+}
+
+.faq-support {
+    position: relative; /* Ensures the accordion is stacked correctly */
+    z-index: 1; /* Ensures it's not hidden behind other content */
+}
+
+
+
+/* footer section */
+.site-footer {
+	position: relative;
+	background: #0B0D19;
+	padding-top: 10%;
+}
+
+.site-footer::before {
+	content: '';
+	position: absolute;
+	top: -76px;
+	left: calc(50% - 360px);
+	width: 720px;
+	height: 291px;
+	background-image: url("../images/footer-bg.svg");
+	background-size: 720px 291px;
+	background-repeat: no-repeat
+}
+
+.site-footer .footer-particles-container {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0
+}
+
+.site-footer-bottom {
+	font-size: 14px;
+	line-height: 22px;
+	letter-spacing: 0px;
+	z-index: 1
+}
+
+.site-footer-bottom a {
+	color: #606483;
+	text-decoration: none
+}
+
+.site-footer-bottom a:hover,
+.site-footer-bottom a:active {
+	text-decoration: underline
+}
+
+.site-footer-inner {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 48px;
+	padding-bottom: 48px;
+	position: relative
+}
+
+.site-footer-inner::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: block;
+	height: 1px;
+	background: #1E233D
+}
+
+.footer-brand,
+.footer-links,
+.footer-social-links,
+.footer-copyright {
+	flex: none;
+	width: 100%;
+	display: inline-flex;
+	justify-content: center
+}
+
+.footer-brand,
+.footer-links,
+.footer-social-links {
+	margin-bottom: 24px
+}
+
+.footer-links li+li,
+.footer-social-links li+li {
+	margin-left: 16px
+}
+
+.footer-social-links li {
+	display: inline-flex
+}
+
+.footer-social-links li a {
+	padding: 8px
+}
+
+@media (min-width: 641px) {
+	.site-footer::before {
+		top: -152px;
+		left: calc(50% - 720px);
+		width: 1440px;
+		height: 582px;
+		background-size: 1440px 582px
+	}
+
+	.site-footer-inner {
+		justify-content: space-between;
+		padding-top: 64px;
+		padding-bottom: 64px
+	}
+
+	.footer-brand,
+	.footer-links,
+	.footer-social-links,
+	.footer-copyright {
+		flex: 50%
+	}
+
+	.footer-brand,
+	.footer-copyright {
+		justify-content: flex-start
+	}
+
+	.footer-links,
+	.footer-social-links {
+		justify-content: flex-end
+	}
+
+	.footer-links {
+		order: 1;
+		margin-bottom: 0
+	}
+}
+
+
+@media (max-width: 1024px) {
+    .hero-title {
+      font-size: 3rem;
+    }
+  
+    .hero-paragraph,
+    .feature-extended-body p {
+      width: 100%;
+      font-size: 1.2rem;
+    }
+  
+    .feature-extended-body h3,
+    .section-features-title,
+    .qr-code-title {
+      font-size: 2.5em;
+    }
+  
+    .device-mockup {
+      max-width: 300px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .site-header-inner {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+    }
+  
+    .header-logo-image {
+      width: 50%;
+    }
+  
+    .hero {
+      padding-top: 100px;
+      padding-bottom: 60px;
+    }
+  
+    .hero-title {
+      font-size: 2.5rem;
+      text-align: center;
+    }
+  
+    .hero-paragraph {
+      font-size: 1rem;
+      text-align: center;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .mockup-container {
+      height: auto;
+      flex-direction: column;
+      margin-top: 2rem;
+    }
+  
+    .device-mockup {
+      margin-top: 2rem;
+      max-width: 90%;
+    }
+  
+    .containerFeatures {
+      margin-top: 20%;
+      gap: 60px;
+    }
+  
+    .feature-extended {
+      flex-direction: column !important;
+      text-align: center;
+    }
+  
+    .feature-extended-image,
+    .feature-extended-body {
+      width: 100%;
+      max-width: 100%;
+    }
+  
+    .feature-extended-body {
+      text-align: center !important;
+      padding: 0 1rem;
+    }
+  
+    .features-wrap {
+      grid-template-columns: 1fr; /* Stack features vertically */
+      gap: 40px;
+    }
+  
+    .qr-code img {
+      width: 60%;
+      height: auto;
+    }
+  
+    .qr-features-inner {
+      flex-direction: column;
+      padding: 0 1rem;
+    }
+  
+    .video-container {
+      padding: 0 1rem;
+    }
+  
+    .feature-extended-body h3,
+    .section-features-title,
+    .qr-code-title {
+      font-size: 2rem;
+    }
+  
+    .text-sm {
+      font-size: 0.95rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-title {
+      font-size: 2rem;
+    }
+  
+    .hero-paragraph,
+    .feature-extended-body p {
+      font-size: 1rem;
+    }
+  
+    .feature-extended-body h3,
+    .section-features-title,
+    .qr-code-title {
+      font-size: 1.75rem;
+    }
+  
+    .feature-icon svg {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .feature-title {
+      font-size: 1.2rem;
+    }
+  
+    .qr-code img {
+      width: 80%;
+    }
+  }
+  
