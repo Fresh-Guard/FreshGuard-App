@@ -3,6 +3,8 @@
 **Fresh Guard** is a cross-platform mobile application designed to help households efficiently manage food expiration dates and reduce food waste. By combining barcode scanning, machine learning, and optical character recognition (OCR), Fresh Guard simplifies pantry tracking, minimizes spoilage, and supports sustainable living.
 
 🔗 [Visit the site](https://dev.freshguard.org/)
+OR
+🔗 [Visit the github pages site](https://fresh-guard.github.io/FreshGuard-App/)
 
 ---
 
@@ -26,6 +28,32 @@ Fresh Guard aims to:
 - Reduce financial loss.
 - Enhance grocery planning.
 - Promote sustainability by reducing household food waste.
+
+---
+
+## FreshGuard Commercial, Demo, & Presentation
+
+### Commercial Video  
+<iframe width="560" height="315" src="https://www.youtube.com/embed/InOtPXMTcno" title="FreshGuard Commercial" frameborder="0" allowfullscreen></iframe>
+
+### Presentation Video  
+<iframe width="560" height="315" src="https://www.youtube.com/embed/k0UtZ2BnPe8" title="FreshGuard Presentation" frameborder="0" allowfullscreen></iframe>
+
+### Demo Video  
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iG3PeiawR-M" title="FreshGuard Demo" frameborder="0" allowfullscreen></iframe>
+
+---
+
+## ℹ️ Notice: App Server Status & Availability
+
+> The **FreshGuard mobile app** and **https://dev.freshguard.org** were may not remain online permanently.
+
+The backend services may be **offline or shut down** at any time.
+
+### But no worries:
+You can still **access the core project content and static web experience** via GitHub Pages:
+
+🔗 [Static Project Site (GitHub Pages)](https://fresh-guard.github.io/FreshGuard-App/)
 
 ---
 
