@@ -1,4 +1,4 @@
-# Fresh Guard
+# FreshGuard
 
 **Fresh Guard** is a cross-platform mobile application designed to help households efficiently manage food expiration dates and reduce food waste. By combining barcode scanning, machine learning, and optical character recognition (OCR), Fresh Guard simplifies pantry tracking, minimizes spoilage, and supports sustainable living.
 
