@@ -33,14 +33,15 @@ Fresh Guard aims to:
 
 ## FreshGuard Commercial, Demo, & Presentation
 
-### Commercial Video  
-<iframe width="560" height="315" src="https://www.youtube.com/embed/InOtPXMTcno" title="FreshGuard Commercial" frameborder="0" allowfullscreen></iframe>
+### FreshGaurd Commercial
+[![Watch the video](https://img.youtube.com/vi/InOtPXMTcno/maxresdefault.jpg)](https://youtu.be/InOtPXMTcno)
 
-### Presentation Video  
-<iframe width="560" height="315" src="https://www.youtube.com/embed/k0UtZ2BnPe8" title="FreshGuard Presentation" frameborder="0" allowfullscreen></iframe>
 
-### Demo Video  
-<iframe width="560" height="315" src="https://www.youtube.com/embed/iG3PeiawR-M" title="FreshGuard Demo" frameborder="0" allowfullscreen></iframe>
+### FreshGaurd Presentation
+[![Watch the video](https://img.youtube.com/vi/k0UtZ2BnPe8/maxresdefault.jpg)](https://youtu.be/k0UtZ2BnPe8)
+
+### FreshGaurd Demo
+[![Watch the video](https://img.youtube.com/vi/iG3PeiawR-M/maxresdefault.jpg)](https://youtu.be/iG3PeiawR-M)
 
 ---
 
