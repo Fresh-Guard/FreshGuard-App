@@ -34,8 +34,7 @@ Fresh Guard aims to:
 ## FreshGuard Commercial, Demo, & Presentation
 
 ### FreshGaurd Commercial
-[![Watch the video](https://img.youtube.com/vi/InOtPXMTcno/maxresdefault.jpg)](https://youtu.be/InOtPXMTcno)
-
+[![Watch the video](https://img.youtube.com/vi/iyyHAhJMT4M/maxresdefault.jpg)](https://youtu.be/iyyHAhJMT4M)
 
 ### FreshGaurd Presentation
 [![Watch the video](https://img.youtube.com/vi/k0UtZ2BnPe8/maxresdefault.jpg)](https://youtu.be/k0UtZ2BnPe8)
